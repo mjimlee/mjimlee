@@ -1,0 +1,26 @@
+h1 {
+  color: "white";
+  text-align: "center";
+  font-family: "Open Sans"
+}
+
+
+body {
+  color: "white";
+  font-family: "Open Sans";
+}
+
+.nav {
+  padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+
+.site-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

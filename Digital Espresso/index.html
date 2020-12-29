@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+  background-color:#B75B4E;
+    }
+    img {
+      border-radius: 60%;
+    }
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+</head>
+
+<body>
+  <img src="logo.jpg" alt="logo" class="center">
+  <nav class="w3-bar w3-white">
+    <a href="index.html" class="w3-button w3-bar-item">Home</a>
+    <a href="aboutus.html" class="w3-button w3-bar-item">About Us</a>
+    <a href="branches.html" class="w3-button w3-bar-item">Branches</a>
+    <a href="products.html" class="w3-button w3-bar-item">Products</a>
+  </nav>
+
+
+  <section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h1>Our Selection</h1>
+    <img class="Slides" src="black.jpg"
+    style="width:100%">
+    <img class="Slides" src="cappucino.jpg"
+    style="width:100%">
+    <img class="Slides" src="icedvanilla.jpg"
+    style="width:100%">
+    <img class="Slides" src="dalgona.jpg"
+    style="width:100%">
+  </section>
+
+  <footer class="w3-container w3-padding-64 w3-center w3-white w3-small">
+    <a href="https://ateneo.instructure.com/">Digital Espresso 2020</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://www.twitter.com/">Twitter</a>
+    <p class="w3-medium">
+    </p>
+  </footer>
+
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+
+</html>
